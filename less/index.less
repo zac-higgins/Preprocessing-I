@@ -9,7 +9,7 @@
 	margin:0;
 	padding:0;
 	max-width:100%;
-    border:1px solid grey;
+   // border:1px solid grey;
   }
 
 /*** beginning of nested styling ***/
@@ -25,7 +25,6 @@ body{
 		font-size: 1.6rem;	
 		
 		#header{
-			background-color: peachpuff;
 			margin-bottom: 14px;
 			display: flex;
 			flex-direction: column;
@@ -42,16 +41,19 @@ body{
 			}//#nameLogo
 
 			nav{
-				border: 1px solid black;
-				max-width: 700px;
+				max-width: 800px;
 				display: flex;
-				justify-content: space-around;
+				justify-content: space-evenly;
 			}//nav
 
 		}//#header
 
 		#tagLineSpace {
 			height: 40vh;
+			width: 100vw;
+			position: relative;
+			left: 0;
+			right: 0;
 			background-image: url("../images/Asset 1.png");
 			background-size: 100% auto;
 			background-attachment: fixed;
