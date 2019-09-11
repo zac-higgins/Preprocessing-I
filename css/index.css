@@ -179,7 +179,6 @@ body {
   align-items: flex-start;
 }
 body #container {
-  background-color: grey;
   max-width: 800px;
   font-size: 1.6rem;
   display: flex;
@@ -190,4 +189,18 @@ body #container {
 body #container #nameLogo img {
   max-width: 800px;
   padding: 14px;
+}
+body #container #header {
+  background-color: peachpuff;
+  margin-bottom: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+body #container #header nav {
+  border: 1px solid black;
+  max-width: 500px;
+  display: flex;
+  justify-content: space-around;
 }
