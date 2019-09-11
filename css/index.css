@@ -61,13 +61,36 @@ body #container #header {
   justify-content: center;
   align-items: center;
 }
+body #container #header #nameLogo {
+  display: flex;
+  justify-content: center;
+}
 body #container #header #nameLogo img {
-  max-width: 75%;
+  max-width: 100%;
   padding: 14px;
 }
 body #container #header nav {
   border: 1px solid black;
-  max-width: 500px;
+  max-width: 700px;
   display: flex;
   justify-content: space-around;
+}
+body #container #tagLineSpace {
+  height: 40vh;
+  background-image: url("../images/Asset 1.png");
+  background-size: 100% auto;
+  background-attachment: fixed;
+  background-origin: content-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body #container #tagLineSpace #tagline {
+  width: 35%;
+  color: white;
+}
+body #container #tagLineSpace #writesCode {
+  display: flex;
+  justify-content: flex-end;
 }
