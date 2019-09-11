@@ -2,6 +2,41 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+@font-face {
+  font-family: 'Khula';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: local('Khula ExtraBold'), local('Khula-ExtraBold'), url(https://fonts.gstatic.com/s/khula/v5/OpNPnoEOns3V7G-piBvTpio.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Roboto Mono'), local('RobotoMono-Regular'), url(https://fonts.gstatic.com/s/robotomono/v7/L0x5DF4xlVMF-BfR8bXMIjhLq3o.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Khula';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: local('Khula ExtraBold'), local('Khula-ExtraBold'), url(https://fonts.gstatic.com/s/khula/v5/OpNPnoEOns3V7G-piBvTpio.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Merriweather Regular'), local('Merriweather-Regular'), url(https://fonts.gstatic.com/s/merriweather/v21/u-440qyriQwlOrhSvowK_l5-fCZJ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Roboto Mono'), local('RobotoMono-Regular'), url(https://fonts.gstatic.com/s/robotomono/v7/L0x5DF4xlVMF-BfR8bXMIjhLq3o.ttf) format('truetype');
+}
 html,
 body,
 div,
