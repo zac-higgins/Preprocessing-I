@@ -130,9 +130,14 @@ body #container #header #nameLogo img {
   padding: 14px;
 }
 body #container #header nav {
-  max-width: 800px;
+  width: 100%;
   display: flex;
   justify-content: space-evenly;
+}
+body #container #header nav a {
+  font-family: khula;
+  text-decoration: none;
+  color: black;
 }
 body #container #tagLineSpace {
   height: 40vh;
