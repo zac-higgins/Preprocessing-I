@@ -133,3 +133,20 @@ body #container #mainContent #experienceBoxes .box {
 body #container #mainContent #experienceBoxes .box h3 {
   margin-bottom: 5px;
 }
+body #container #mainContent #contactMe {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+body #container #mainContent #contactMe #links {
+  margin: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+body #container #footer {
+  display: flex;
+}
+body #container #footer p {
+  margin: 5px;
+}
