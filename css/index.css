@@ -226,8 +226,12 @@ body #container #mainContent #contactMe #links {
 body #container #mainContent #contactMe #links h2 {
   font-family: khula;
 }
-body #container #mainContent #contactMe #links p {
+body #container #mainContent #contactMe #links a {
   font-family: merriweather;
+  text-decoration: none;
+}
+body #container #mainContent #contactMe #links a:hover {
+  font-family: khula;
 }
 body #container #footer {
   display: flex;
