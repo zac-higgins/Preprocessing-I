@@ -95,3 +95,12 @@ body #container #tagLineSpace #writesCode {
   display: flex;
   justify-content: flex-end;
 }
+body #container #mainContent #aboutMe {
+  padding: 10px 0px 10px 0px;
+  display: flex;
+  align-items: center;
+}
+body #container #mainContent #profilePicture img {
+  max-width: 100%;
+  max-height: 1500px;
+}
