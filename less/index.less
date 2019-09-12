@@ -7,6 +7,13 @@
 @h2Font: khula;
 @pFont: merriweather;
 
+.center(){
+	display: flex;
+	justify-content: center;
+}
+.borderBottom(){
+	border-bottom: 2px solid black;
+}
 
 *{
 	box-sizing:border-box;
@@ -21,9 +28,9 @@ html{
 	font-size: 62.5%;
 }
 body{
-	display: flex;
-	justify-content: center;
+	.center();
 	align-items: flex-start;
+	
 	#container{
 		max-width: 800px;
 		font-size: 1.6rem;
@@ -32,18 +39,17 @@ body{
 		}
 		p{
 			font-family: @pFont;
-		}	
+		}
+			
 		
 		#header{
 			margin-bottom: 14px;
-			display: flex;
+			.center();
 			flex-direction: column;
-			justify-content: center;
 			align-items: center;
 
 			#nameLogo{
-				display: flex;
-				justify-content: center;
+				.center();
 				img{
 					max-width: 100%;
 					padding: 14px;
@@ -94,6 +100,8 @@ body{
 
 		#mainContent{
 
+			.borderBottom();
+
 			#aboutMe{
 				padding: 10px 0px 10px 0px;
 				display: flex;
@@ -108,8 +116,7 @@ body{
 			}//#profilePicture
 
 			#testimonial{
-				display: flex;
-				justify-content: center;
+				.center();
 				.quote{
 					font-size: 2rem;
 					max-width: 60%;
@@ -120,8 +127,7 @@ body{
 
 					p{
 						padding: 5px 0px 5px 0px;
-						display: flex;
-						justify-content: center;
+						.center();
 						text-align: center;
 					}//p
 				}//.quote

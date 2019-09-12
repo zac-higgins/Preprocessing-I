@@ -61,8 +61,8 @@ body #container p {
 body #container #header {
   margin-bottom: 14px;
   display: flex;
-  flex-direction: column;
   justify-content: center;
+  flex-direction: column;
   align-items: center;
 }
 body #container #header #nameLogo {
@@ -104,6 +104,9 @@ body #container #tagLineSpace #writesCode {
 }
 body #container #tagLineSpace #speaksHuman {
   font-family: khula;
+}
+body #container #mainContent {
+  border-bottom: 2px solid black;
 }
 body #container #mainContent #aboutMe {
   padding: 10px 0px 10px 0px;
