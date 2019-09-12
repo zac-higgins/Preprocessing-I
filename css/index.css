@@ -88,13 +88,17 @@ body {
   }
   body #myExperience #experienceBoxes .box {
     margin: 0;
-    width: 100%;
+    max-width: 100%;
     display: flex;
     flex-direction: row;
-    background-color: red;
+    justify-content: space-between;
   }
   body #contactMe {
     width: 450px;
+  }
+  body #contactMe #links a {
+    text-decoration: none;
+    font-family: merriweather;
   }
   body #footer {
     width: 450px;
@@ -189,20 +193,24 @@ body #container #mainContent #testimonial .quote p {
 }
 body #container #mainContent #experienceBoxes {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
 }
 body #container #mainContent #experienceBoxes .box {
   margin-top: 15px;
-  max-width: 25%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 body #container #mainContent #experienceBoxes .box h3 {
   font-family: khula;
   margin-bottom: 5px;
+  text-align: center;
 }
 body #container #mainContent #experienceBoxes .box p {
   font-family: merriweather;
+  text-align: center;
 }
 body #container #mainContent #contactMe {
   margin-bottom: 15px;
