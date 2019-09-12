@@ -52,6 +52,12 @@ body #container {
   max-width: 800px;
   font-size: 1.6rem;
 }
+body #container h2 {
+  font-family: khula;
+}
+body #container p {
+  font-family: merriweather;
+}
 body #container #header {
   margin-bottom: 14px;
   display: flex;
@@ -92,8 +98,12 @@ body #container #tagLineSpace #tagline {
   color: white;
 }
 body #container #tagLineSpace #writesCode {
+  font-family: roboto mono;
   display: flex;
   justify-content: flex-end;
+}
+body #container #tagLineSpace #speaksHuman {
+  font-family: khula;
 }
 body #container #mainContent #aboutMe {
   padding: 10px 0px 10px 0px;
@@ -109,6 +119,7 @@ body #container #mainContent #testimonial {
   justify-content: center;
 }
 body #container #mainContent #testimonial .quote {
+  font-size: 2rem;
   max-width: 60%;
   display: flex;
   flex-direction: column;
@@ -119,6 +130,7 @@ body #container #mainContent #testimonial .quote p {
   padding: 5px 0px 5px 0px;
   display: flex;
   justify-content: center;
+  text-align: center;
 }
 body #container #mainContent #experienceBoxes {
   display: flex;
@@ -131,7 +143,11 @@ body #container #mainContent #experienceBoxes .box {
   max-width: 25%;
 }
 body #container #mainContent #experienceBoxes .box h3 {
+  font-family: khula;
   margin-bottom: 5px;
+}
+body #container #mainContent #experienceBoxes .box p {
+  font-family: merriweather;
 }
 body #container #mainContent #contactMe {
   margin-bottom: 15px;
@@ -144,9 +160,16 @@ body #container #mainContent #contactMe #links {
   display: flex;
   justify-content: space-between;
 }
+body #container #mainContent #contactMe #links h2 {
+  font-family: khula;
+}
+body #container #mainContent #contactMe #links p {
+  font-family: merriweather;
+}
 body #container #footer {
   display: flex;
 }
 body #container #footer p {
   margin: 5px;
+  font-family: merriweather;
 }
