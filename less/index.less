@@ -31,6 +31,65 @@ body{
 	.center();
 	align-items: flex-start;
 	
+	@media (max-width: 500px){
+		
+		.center();
+		padding-left: 5px;
+		padding-right: 5px;
+
+		#container{
+			width: 460px;
+		}
+		#mainContent{
+			.center();
+			flex-direction: column;
+			align-items: center;
+			width: 500px;
+		}
+
+		#aboutMe{
+			max-width: 400px;
+			.center();
+			flex-direction: column;
+			flex-wrap: wrap;
+			
+			#profilePicture{
+				img{
+					size: 25px;
+					
+				}
+			}
+			
+		}
+		#myExperience{
+			max-width: 450px;
+			padding: 0;
+			
+			#experienceBoxes{
+				.center();
+				flex-direction: column;
+				align-items: center;
+				width: 100%;
+				
+				
+				.box{
+					margin: 0;
+					width: 100%;
+					display: flex;
+					flex-direction: row;
+					
+					background-color: red;
+				}
+			}
+		}//#myExperience
+		#contactMe{
+			width: 450px;
+		}
+		#footer{
+			width: 450px;
+		}
+	}//@media 500px
+
 	#container{
 		max-width: 800px;
 		font-size: 1.6rem;
