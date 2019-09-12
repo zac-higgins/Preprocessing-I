@@ -1,59 +1,270 @@
-// Is this working?
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+//importing fonts
+@import url('https://fonts.googleapis.com/css?family=Khula:800%7CRoboto+Mono&display=swap');
+
+@import url('https://fonts.googleapis.com/css?family=Khula:800%7CMerriweather%7CRoboto+Mono&display=swap');
+
+@h2Font: khula;
+@pFont: merriweather;
+
+.center(){
+	display: flex;
+	justify-content: center;
 }
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
+.borderBottom(){
+	border-bottom: 2px solid black;
 }
 
-/* Set every element's box-sizing to border-box */
-* {
-    box-sizing: border-box;
-}
+*{
+	box-sizing:border-box;
+	margin:0;
+	padding:0;
+	max-width:100%;
+   // border:1px solid grey;
+  }
 
-html, body {
-    height: 100%;
+/*** beginning of nested styling ***/
+html{
+	font-size: 62.5%;
 }
+body{
+	.center();
+	align-items: flex-start;
+	
+	@media (max-width: 500px){
+		
+		.center();
+		padding-left: 5px;
+		padding-right: 5px;
 
+		#container{
+			width: 460px;
+		}
+		#mainContent{
+			.center();
+			flex-direction: column;
+			align-items: center;
+			width: 500px;
+		}
+
+		#aboutMe{
+			max-width: 400px;
+			.center();
+			flex-direction: column;
+			flex-wrap: wrap;
+			
+			#profilePicture{
+				img{
+					size: 25px;
+					
+				}
+			}
+			
+		}
+		#myExperience{
+			max-width: 450px;
+			padding: 0;
+			
+			#experienceBoxes{
+				.center();
+				flex-direction: column;
+				align-items: center;
+				width: 100%;
+				
+				
+				.box{
+					margin: 0;
+					max-width:100%;
+					display: flex;
+					flex-direction: row;
+					justify-content: space-between;
+				}
+			}
+		}//#myExperience
+		#contactMe{
+			width: 450px;
+			#links{
+				a{
+					text-decoration: none;
+					font-family: @pFont;
+				}
+
+			}
+			
+		}
+		#footer{
+			width: 450px;
+		}
+	}//@media 500px
+
+	#container{
+		max-width: 800px;
+		font-size: 1.6rem;
+		h2{
+			font-family: @h2Font;
+		}
+		p{
+			font-family: @pFont;
+		}
+			
+		
+		#header{
+			margin-bottom: 14px;
+			.center();
+			flex-direction: column;
+			align-items: center;
+
+			#nameLogo{
+				.center();
+				img{
+					max-width: 100%;
+					padding: 14px;
+				}
+			}//#nameLogo
+
+			nav{
+				width: 100%;
+				display: flex;
+				justify-content: space-evenly;
+				a{
+					font-family: @h2Font;
+					text-decoration: none;
+					color: black;
+				}
+			}//nav
+
+		}//#header
+
+		#tagLineSpace {
+			height: 40vh;
+			width: 100vw;
+			position: relative;
+			left: 0;
+			right: 0;
+			background-image: url("../images/Asset 1.png");
+			background-size: 100% auto;
+			background-attachment: fixed;
+			background-origin: content-box;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+
+			#tagline{
+				width: 35%;
+				color: white;
+			}
+
+			#writesCode{
+				font-family: roboto mono;
+				display: flex;
+				justify-content: flex-end;
+			}
+
+			#speaksHuman{
+				font-family: khula;
+			}
+
+
+
+		}//#tagLineSpace
+
+		#mainContent{
+
+			.borderBottom();
+
+			#aboutMe{
+				padding: 10px 0px 10px 0px;
+				display: flex;
+				align-items: center;
+			}//#aboutMe
+
+			#profilePicture{
+				img{
+					max-width: 100%;
+					max-height: 1500px;
+				}
+			}//#profilePicture
+
+			#testimonial{
+				.center();
+				.quote{
+					font-size: 2rem;
+					max-width: 60%;
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+					align-items: center;
+
+					p{
+						padding: 5px 0px 5px 0px;
+						.center();
+						text-align: center;
+					}//p
+				}//.quote
+			}//#testimonial
+
+			#experienceBoxes{
+				display: flex;
+				//flex-wrap: wrap;
+				justify-content: space-between;
+				align-items: center;
+
+				.box{
+					margin-top: 15px;
+					.center();
+					flex-direction: column;
+					align-items: center;
+					//max-width: 25%;
+					h3{
+						font-family: @h2Font;
+						margin-bottom: 5px;
+						text-align: center;
+					}
+					p{
+						font-family: @pFont;
+						text-align: center;
+					}
+				}
+
+
+			}//#experienceBoxes
+
+			#contactMe{
+				margin-bottom: 15px;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+
+				#links{
+					margin: 15px;
+					display: flex;
+					justify-content: space-between;
+					h2{
+						font-family: @h2Font;
+					}
+					a{
+						font-family: @pFont;
+						text-decoration: none;
+						
+					}
+					a:hover{
+						font-family: @h2Font;
+					}
+				}
+			}//#contactMe
+
+		}//#mainContent
+
+		#footer{
+			display: flex;
+
+			p{
+				margin: 5px;
+				font-family: @pFont
+			}
+		}
+
+	}//container
+	
+}//body

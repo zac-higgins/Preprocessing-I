@@ -1,1 +1,247 @@
-/* Compile your LESS file! */
+@font-face {
+  font-family: 'Khula';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: local('Khula ExtraBold'), local('Khula-ExtraBold'), url(https://fonts.gstatic.com/s/khula/v5/OpNPnoEOns3V7G-piBvTpio.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Roboto Mono'), local('RobotoMono-Regular'), url(https://fonts.gstatic.com/s/robotomono/v7/L0x5DF4xlVMF-BfR8bXMIjhLq3o.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Khula';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: local('Khula ExtraBold'), local('Khula-ExtraBold'), url(https://fonts.gstatic.com/s/khula/v5/OpNPnoEOns3V7G-piBvTpio.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Merriweather Regular'), local('Merriweather-Regular'), url(https://fonts.gstatic.com/s/merriweather/v21/u-440qyriQwlOrhSvowK_l5-fCZJ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Roboto Mono'), local('RobotoMono-Regular'), url(https://fonts.gstatic.com/s/robotomono/v7/L0x5DF4xlVMF-BfR8bXMIjhLq3o.ttf) format('truetype');
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+}
+/*** beginning of nested styling ***/
+html {
+  font-size: 62.5%;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+@media (max-width: 500px) {
+  body {
+    display: flex;
+    justify-content: center;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  body #container {
+    width: 460px;
+  }
+  body #mainContent {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+  }
+  body #aboutMe {
+    max-width: 400px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  body #aboutMe #profilePicture img {
+    size: 25px;
+  }
+  body #myExperience {
+    max-width: 450px;
+    padding: 0;
+  }
+  body #myExperience #experienceBoxes {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  body #myExperience #experienceBoxes .box {
+    margin: 0;
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  body #contactMe {
+    width: 450px;
+  }
+  body #contactMe #links a {
+    text-decoration: none;
+    font-family: merriweather;
+  }
+  body #footer {
+    width: 450px;
+  }
+}
+body #container {
+  max-width: 800px;
+  font-size: 1.6rem;
+}
+body #container h2 {
+  font-family: khula;
+}
+body #container p {
+  font-family: merriweather;
+}
+body #container #header {
+  margin-bottom: 14px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+body #container #header #nameLogo {
+  display: flex;
+  justify-content: center;
+}
+body #container #header #nameLogo img {
+  max-width: 100%;
+  padding: 14px;
+}
+body #container #header nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+body #container #header nav a {
+  font-family: khula;
+  text-decoration: none;
+  color: black;
+}
+body #container #tagLineSpace {
+  height: 40vh;
+  width: 100vw;
+  position: relative;
+  left: 0;
+  right: 0;
+  background-image: url("../images/Asset 1.png");
+  background-size: 100% auto;
+  background-attachment: fixed;
+  background-origin: content-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body #container #tagLineSpace #tagline {
+  width: 35%;
+  color: white;
+}
+body #container #tagLineSpace #writesCode {
+  font-family: roboto mono;
+  display: flex;
+  justify-content: flex-end;
+}
+body #container #tagLineSpace #speaksHuman {
+  font-family: khula;
+}
+body #container #mainContent {
+  border-bottom: 2px solid black;
+}
+body #container #mainContent #aboutMe {
+  padding: 10px 0px 10px 0px;
+  display: flex;
+  align-items: center;
+}
+body #container #mainContent #profilePicture img {
+  max-width: 100%;
+  max-height: 1500px;
+}
+body #container #mainContent #testimonial {
+  display: flex;
+  justify-content: center;
+}
+body #container #mainContent #testimonial .quote {
+  font-size: 2rem;
+  max-width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body #container #mainContent #testimonial .quote p {
+  padding: 5px 0px 5px 0px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+body #container #mainContent #experienceBoxes {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body #container #mainContent #experienceBoxes .box {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+body #container #mainContent #experienceBoxes .box h3 {
+  font-family: khula;
+  margin-bottom: 5px;
+  text-align: center;
+}
+body #container #mainContent #experienceBoxes .box p {
+  font-family: merriweather;
+  text-align: center;
+}
+body #container #mainContent #contactMe {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+body #container #mainContent #contactMe #links {
+  margin: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+body #container #mainContent #contactMe #links h2 {
+  font-family: khula;
+}
+body #container #mainContent #contactMe #links a {
+  font-family: merriweather;
+  text-decoration: none;
+}
+body #container #mainContent #contactMe #links a:hover {
+  font-family: khula;
+}
+body #container #footer {
+  display: flex;
+}
+body #container #footer p {
+  margin: 5px;
+  font-family: merriweather;
+}
